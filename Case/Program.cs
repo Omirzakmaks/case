@@ -127,9 +127,29 @@ namespace Case
                 case 4: Console.WriteLine($"a/b={a/b}");break;
             }
         }
-        static void Main(string[] args)
+        static void case6()
         {
-            case5();
+            Console.WriteLine("1-decimetr, 2-kilometr, 3-metr, 4-millimetr, 5-santimetr");
+            Console.WriteLine();
+            Console.Write("san engiz:");
+            int x = int.Parse(Console.ReadLine());
+            Console.WriteLine("metr=");
+            double metr = Convert.ToDouble(Console.ReadLine());
+            switch (x)
+            {
+                case 1: Console.WriteLine($"{metr}metr={metr*10} decimetr"); break;
+                case 3: Console.WriteLine($"{metr}metr={metr} metr"); break;
+                case 4: Console.WriteLine($"{metr}metr={metr*1000 }millimetr"); break;
+                case 2: Console.WriteLine($"{metr}metr={metr / 1000} kilometr"); break;
+                case 5: Console.WriteLine($"{metr}metr={metr * 100} santimetr"); break;
+                default: Console.WriteLine("Kate!");  break;
+            }
+
+        }
+            static void Main(string[] args)
+        { int x= 2;
+            Console.WriteLine(x/100);
+            //case6();
             Console.ReadKey();
 
         }
