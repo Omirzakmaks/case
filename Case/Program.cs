@@ -146,10 +146,56 @@ namespace Case
             }
 
         }
+        static void case7()
+        {
+            Console.WriteLine("1-kilogramm, 2-milligramm,3-gramm, 4-tonna, 5-centner");
+            Console.Write("san engiz:");
+            int x = Convert.ToInt32(Console.ReadLine());
+            Console.WriteLine("Massa:");
+            double massa = double.Parse(Console.ReadLine());
+            switch (x)
+            {
+                case 1: Console.WriteLine($"{massa} kg");break;
+                case 2: Console.WriteLine($"{massa/10000000} mg"); break;
+                case 3: Console.WriteLine($"{massa/1000} gr"); break;
+                case 4: Console.WriteLine($"{massa*1000} tn"); break;
+                case 5: Console.WriteLine($"{massa*100} ct"); break;
+            }
+        }
+        static void case8()
+        {
+            Console.Write("kun engiz D=");
+            int d = int.Parse(Console.ReadLine());
+            Console.Write("ai nomerin engiz M=");
+            int m = int.Parse(Console.ReadLine());
+            d = d - 1;
+            if (d == 0)
+            {
+                d = 1;
+                m = m - 1;
+                if (m == 0) m = 12;
+                switch (m)
+                {
+                    case 1:
+                    case 3:
+                    case 5:
+                    case 7:
+                    case 8:
+                    case 10:
+                    case 12: d = 31; break;
+                    case 4:
+                    case 6:
+                    case 9:
+                    case 11: d = 30; break;
+                    case 2: d = 28; break;
+
+                }
+            }
+            Console.WriteLine($"{d}.{m}");
+        }
             static void Main(string[] args)
-        { int x= 2;
-            Console.WriteLine(x/100);
-            //case6();
+        { 
+           case8();
             Console.ReadKey();
 
         }
