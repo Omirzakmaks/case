@@ -193,9 +193,69 @@ namespace Case
             }
             Console.WriteLine($"{d}.{m}");
         }
-            static void Main(string[] args)
+        static void case9()
+        {
+            Console.Write("kun engiz D=");
+            int day = int.Parse(Console.ReadLine());
+            Console.Write("ai nomerin engiz M=");
+            int month = int.Parse(Console.ReadLine());
+            day++;
+            switch (day)
+            {
+                case 32:
+                    day = 1; month++;
+
+                    switch (month)
+                    {
+                        case 1:
+                        case 3:
+                        case 5:
+                        case 7:
+                        case 8:
+                        case 10: day = 31; break;
+                        case 13: day = 1; month = 1; break;
+
+                    }
+                    break;
+                case 29:
+                    day = 1; month++;
+                    switch (month)
+                    {
+                        case 2: day = 28; break;
+                    }
+                    break;
+
+                case 31:
+                    day = 1; month++;
+                    switch (month)
+                    {
+                        case 4:
+                        case 6:
+                        case 9:
+                        case 11:
+                            day = 30; break;
+                        case 12: day = 1; month = 1; break;
+                    } break;
+               
+            }
+            
+            Console.WriteLine($"{day}.{month}");
+        }
+        static void case10()
+        {
+            Console.Write("'s','u','z','v' engiz");
+            string s = Console.ReadLine();
+            Console.Write("0,1,-1 sandar engiz");
+            int n = Convert.ToInt32(Console.ReadLine());
+            switch (s)
+            {
+                case 1: n;break;
+            }
+
+        }
+        static void Main(string[] args)
         { 
-           case8();
+           case10();
             Console.ReadKey();
 
         }
