@@ -243,19 +243,55 @@ namespace Case
         }
         static void case10()
         {
-            Console.Write("'s','u','z','v' engiz");
-            string s = Console.ReadLine();
-            Console.Write("0,1,-1 sandar engiz");
-            int n = Convert.ToInt32(Console.ReadLine());
-            switch (s)
-            {
-                case 1: n;break;
+             Console.Write("'s','u','z','v' naplavlenie: ");
+             string c = Console.ReadLine();
+             Console.Write("0,1,-1 operacia: ");
+             int n = Convert.ToInt32(Console.ReadLine());
+             switch (c)
+             {
+                 case "s":
+                     switch (n)
+                     {
+                         case 0: c="s";break;
+                         case 1: c = "z"; break;
+                        case -1: c = "v"; break;
+                    }
+                     break;
+                case "u":
+                    switch(n)
+                    {
+                        case 0: c = "u"; break;
+                        case 1: c = "v"; break;
+                        case -1: c = "z"; break;
+                    }
+                    break;
+                case "v":
+                    switch (n)
+                    {
+                        case 0: c = "v"; break;
+                        case 1: c = "s"; break;
+                        case -1: c = "u"; break;
+                    }
+                    break;
+                case "z":
+                    switch (n)
+                    {
+                        case 0: c = "z"; break;
+                        case 1: c = "u"; break;
+                        case -1: c = "s"; break;
+                    }
+                    break;
+                default: Console.WriteLine("Kate!");break;
             }
-
+            Console.WriteLine("rezult: "+c);
+        }
+        static void case11()
+        {
+          
         }
         static void Main(string[] args)
         { 
-           case10();
+           case11();
             Console.ReadKey();
 
         }
