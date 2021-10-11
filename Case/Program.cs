@@ -287,11 +287,142 @@ namespace Case
         }
         static void case11()
         {
-          
+            Console.Write("'s','u','z','v' naplavlenie: ");
+            string c = Console.ReadLine();
+            Console.Write("0,1,-1 operacia, n1: ");
+            int n1 = Convert.ToInt32(Console.ReadLine());
+            Console.Write("0,1,-1 operacia, n2: ");
+            int n2 = Convert.ToInt32(Console.ReadLine());
+            switch (c)
+            {
+                case "s":
+                    switch (n1)
+                    {
+
+                        case 1:
+                            c = "z";
+                            switch (n2)
+                            {
+                                case 1: c = "u"; break;
+                                case -1: c = "s"; break;
+                                case 2: c = "v"; break;
+                            }
+                            break;
+                        case -1:
+                            c = "v";
+                            switch (n2)
+                            {
+                                case 1: c = "s"; break;
+                                case -1: c = "u"; break;
+                                case 2: c = "z"; break;
+                            }
+                            break;
+                        case 2:
+                            c = "u";
+                            switch (n2)
+                            {
+                                case 1: c = "v"; break;
+                                case -1: c = "z"; break;
+                                case 2: c = "s"; break;
+                            }
+                            break;
+                    }break;
+                case "u":
+                    switch (n1)
+                    {
+                        case 1: 
+                            switch (n2)
+                            {
+                                case 1:c = "z";break;
+                                case -1:c = "u";break;
+                                case 2: c = "v"; break;
+                            }break;
+                        case -1:
+                            switch (n2)
+                            {
+                                case 1: c = "u"; break;
+                                case -1: c = "s"; break;
+                                case 2: c = "z"; break;
+                            }
+                            break;
+                        case 2:
+                            switch (n2)
+                            {
+                                case 1: c = "z"; break;
+                                case -1: c = "v"; break;
+                                case 2: c = "u"; break;
+                            }
+                            break;
+                    } break;
+                case "v":
+                    switch (n1)
+                    {
+                        case 1:
+                            switch (n2)
+                            {
+                                case 1: c = "z"; break;
+                                case -1: c = "v"; break;
+                                case 2: c = "u"; break;
+                            }
+                            break;
+                        case -1:
+                            switch (n2)
+                            {
+                                case 1: c = "v"; break;
+                                case -1: c = "z"; break;
+                                case 2: c = "s"; break;
+                            }
+                            break;
+                        case 2:
+                            switch (n2)
+                            {
+                                case 1: c = "u"; break;
+                                case -1: c = "s"; break;
+                                case 2: c = "v"; break;
+                            }
+                            break;
+                    }
+                    break;
+                case "z":
+                    switch (n1)
+                    {
+                        case 1:
+                            switch (n2)
+                            {
+                                case 1: c = "v"; break;
+                                case -1: c = "z"; break;
+                                case 2: c = "s"; break;
+                            }
+                            break;
+                        case -1:
+                            switch (n2)
+                            {
+                                case 1: c = "z"; break;
+                                case -1: c = "v"; break;
+                                case 2: c = "s"; break;
+                            }
+                            break;
+                        case 2:
+                            switch (n2)
+                            {
+                                case 1: c = "s"; break;
+                                case -1: c = "u"; break;
+                                case 2: c = "z"; break;
+                            }
+                            break;
+                    }
+                    break;
+                default: Console.WriteLine("Kate!"); break;
+            }
+            Console.WriteLine(c);
+            }
+        static void case12()
+        {
+
         }
         static void Main(string[] args)
         { 
-           case11();
+           case12();
             Console.ReadKey();
 
         }
