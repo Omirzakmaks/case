@@ -418,6 +418,49 @@ namespace Case
             }
         static void case12()
         {
+            Console.Write("1-r, 2-d,3-l,4-s: ");
+            int a = Convert.ToInt32(Console.ReadLine());
+            Console.Write("b: ");
+            int b = Convert.ToInt32(Console.ReadLine());
+            double r, d, l, s;
+            switch (a)
+            {
+                case 1: Console.WriteLine("r= "+b); r = b; d = r * 2;l = Math.PI * 2 * r;s = Math.PI * r * r;
+                    Console.WriteLine($"radius-{r} diametr-{d} dlina-{l} ploshad-{s}"); break;
+                case 2: Console.WriteLine("d= "+b); r = b / 2; d = b; l = Math.PI * 2 * r; s = Math.PI * r * r;
+                    Console.WriteLine($"radius-{r} diametr-{d} dlina-{l} ploshad-{s}"); break;
+                case 3: Console.WriteLine("l= " + b); l = b; r = l/ 2*Math.PI; d = r*2;  s = Math.PI * r * r;
+                    Console.WriteLine($"radius-{r} diametr-{d} dlina-{l} ploshad-{s}"); break;
+                case 4: Console.WriteLine("s= " + b); s = b; r=Math.Sqrt(s / Math.PI) ; d = r * 2; l = Math.PI * 2 * r;
+                    Console.WriteLine($"radius-{r} diametr-{d} dlina-{l} ploshad-{s}"); break;
+                    
+            }
+            
+        }
+        static void case13()
+        {
+            Console.Write("1-a, 2-c,3-h,4-s: ");
+            int x = Convert.ToInt32(Console.ReadLine());
+            Console.Write("b: ");
+            int b = Convert.ToInt32(Console.ReadLine());
+            double a, c,h, s;
+            switch (x)
+            {
+                case 1:
+                    Console.WriteLine("1-katet= " + b); a = b; c = a*Math.Sqrt(2); h = c/2 ; s = c*h/2;
+                    Console.WriteLine($"katet= {a} gipotenuza= {c} vysota= {h} ploshad= {s}"); break;
+                case 2:
+                    Console.WriteLine("2-gipotenuza= " + b); c = b; a= c / Math.Sqrt(2); h = c / 2; s = c * h / 2;
+                    Console.WriteLine($"katet= {a} gipotenuza= {c} vysota= {h} ploshad= {s}"); break;
+                case 3:
+                    Console.WriteLine("3-vysota= " + b); h = b; c = h * 2; a = c/ Math.Sqrt(2);  s = c * h / 2;
+                    Console.WriteLine($"katet= {a} gipotenuza= {c} vysota= {h} ploshad= {s}"); break;
+                case 4:
+                    Console.WriteLine("ploshad= " + b); s = b; a = Math.Sqrt(s*2); c = a * Math.Sqrt(2); h = c / 2;
+
+                    Console.WriteLine($"katet= {a} gipotenuza= {c} vysota= {h} ploshad= {s}"); break;
+
+            }
 
         }
         static void Main(string[] args)
