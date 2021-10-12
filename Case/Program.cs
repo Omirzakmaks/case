@@ -41,16 +41,17 @@ namespace Case
 
             }
         }
-            static void case2()
-            {
-                Console.WriteLine("1-5 aralykta san engiz:");
-                int x = Convert.ToInt32(Console.ReadLine());
+        static void case2()
+        {
+            Console.WriteLine("1-5 aralykta san engiz:");
+            int x = Convert.ToInt32(Console.ReadLine());
             switch (x)
             {
                 case 1:
                     Console.WriteLine("zhaman");
                     break;
-                case 2: Console.WriteLine("kanagattanarlyksyz");
+                case 2:
+                    Console.WriteLine("kanagattanarlyksyz");
                     break;
                 case 3:
                     Console.WriteLine("kanagattanarlyk");
@@ -66,14 +67,14 @@ namespace Case
                     break;
             }
 
-            }
+        }
         static void case3()
         {
             Console.WriteLine("1-12 aralykta san engiz: ");
             int x = int.Parse(Console.ReadLine());
             switch (x)
             {
-                case 1: Console.WriteLine("1-Kantar ai");break;
+                case 1: Console.WriteLine("1-Kantar ai"); break;
                 case 2: Console.WriteLine("2-Akpan ai"); break;
                 case 3: Console.WriteLine("3-Nauryz ai"); break;
                 case 4: Console.WriteLine("4-Sauir ai"); break;
@@ -85,7 +86,7 @@ namespace Case
                 case 10: Console.WriteLine("10-Kazan ai"); break;
                 case 11: Console.WriteLine("11-Karasha ai"); break;
                 case 12: Console.WriteLine("12-Zheltoksan ai"); break;
-                default: Console.WriteLine("Kate!");break;
+                default: Console.WriteLine("Kate!"); break;
             }
 
         }
@@ -101,7 +102,7 @@ namespace Case
                 case 7:
                 case 8:
                 case 10:
-                case 12: Console.WriteLine("31 kun");break;
+                case 12: Console.WriteLine("31 kun"); break;
                 case 4:
                 case 6:
                 case 9:
@@ -121,10 +122,10 @@ namespace Case
             double b = double.Parse(Console.ReadLine());
             switch (x)
             {
-                case 1: Console.WriteLine($"a+b={a+b}"); break;
-                case 2: Console.WriteLine($"a-b={a-b}");break;
-                case 3: Console.WriteLine($"a*b={a*b}");break;
-                case 4: Console.WriteLine($"a/b={a/b}");break;
+                case 1: Console.WriteLine($"a+b={a + b}"); break;
+                case 2: Console.WriteLine($"a-b={a - b}"); break;
+                case 3: Console.WriteLine($"a*b={a * b}"); break;
+                case 4: Console.WriteLine($"a/b={a / b}"); break;
             }
         }
         static void case6()
@@ -137,12 +138,12 @@ namespace Case
             double metr = Convert.ToDouble(Console.ReadLine());
             switch (x)
             {
-                case 1: Console.WriteLine($"{metr}metr={metr*10} decimetr"); break;
+                case 1: Console.WriteLine($"{metr}metr={metr * 10} decimetr"); break;
                 case 3: Console.WriteLine($"{metr}metr={metr} metr"); break;
-                case 4: Console.WriteLine($"{metr}metr={metr*1000 }millimetr"); break;
+                case 4: Console.WriteLine($"{metr}metr={metr * 1000 }millimetr"); break;
                 case 2: Console.WriteLine($"{metr}metr={metr / 1000} kilometr"); break;
                 case 5: Console.WriteLine($"{metr}metr={metr * 100} santimetr"); break;
-                default: Console.WriteLine("Kate!");  break;
+                default: Console.WriteLine("Kate!"); break;
             }
 
         }
@@ -155,11 +156,11 @@ namespace Case
             double massa = double.Parse(Console.ReadLine());
             switch (x)
             {
-                case 1: Console.WriteLine($"{massa} kg");break;
-                case 2: Console.WriteLine($"{massa/10000000} mg"); break;
-                case 3: Console.WriteLine($"{massa/1000} gr"); break;
-                case 4: Console.WriteLine($"{massa*1000} tn"); break;
-                case 5: Console.WriteLine($"{massa*100} ct"); break;
+                case 1: Console.WriteLine($"{massa} kg"); break;
+                case 2: Console.WriteLine($"{massa / 10000000} mg"); break;
+                case 3: Console.WriteLine($"{massa / 1000} gr"); break;
+                case 4: Console.WriteLine($"{massa * 1000} tn"); break;
+                case 5: Console.WriteLine($"{massa * 100} ct"); break;
             }
         }
         static void case8()
@@ -235,30 +236,31 @@ namespace Case
                         case 11:
                             day = 30; break;
                         case 12: day = 1; month = 1; break;
-                    } break;
-               
+                    }
+                    break;
+
             }
-            
+
             Console.WriteLine($"{day}.{month}");
         }
         static void case10()
         {
-             Console.Write("'s','u','z','v' naplavlenie: ");
-             string c = Console.ReadLine();
-             Console.Write("0,1,-1 operacia: ");
-             int n = Convert.ToInt32(Console.ReadLine());
-             switch (c)
-             {
-                 case "s":
-                     switch (n)
-                     {
-                         case 0: c="s";break;
-                         case 1: c = "z"; break;
+            Console.Write("'s','u','z','v' naplavlenie: ");
+            string c = Console.ReadLine();
+            Console.Write("0,1,-1 operacia: ");
+            int n = Convert.ToInt32(Console.ReadLine());
+            switch (c)
+            {
+                case "s":
+                    switch (n)
+                    {
+                        case 0: c = "s"; break;
+                        case 1: c = "z"; break;
                         case -1: c = "v"; break;
                     }
-                     break;
+                    break;
                 case "u":
-                    switch(n)
+                    switch (n)
                     {
                         case 0: c = "u"; break;
                         case 1: c = "v"; break;
@@ -281,9 +283,9 @@ namespace Case
                         case -1: c = "s"; break;
                     }
                     break;
-                default: Console.WriteLine("Kate!");break;
+                default: Console.WriteLine("Kate!"); break;
             }
-            Console.WriteLine("rezult: "+c);
+            Console.WriteLine("rezult: " + c);
         }
         static void case11()
         {
@@ -326,17 +328,19 @@ namespace Case
                                 case 2: c = "s"; break;
                             }
                             break;
-                    }break;
+                    }
+                    break;
                 case "u":
                     switch (n1)
                     {
-                        case 1: 
+                        case 1:
                             switch (n2)
                             {
-                                case 1:c = "z";break;
-                                case -1:c = "u";break;
+                                case 1: c = "z"; break;
+                                case -1: c = "u"; break;
                                 case 2: c = "v"; break;
-                            }break;
+                            }
+                            break;
                         case -1:
                             switch (n2)
                             {
@@ -353,7 +357,8 @@ namespace Case
                                 case 2: c = "u"; break;
                             }
                             break;
-                    } break;
+                    }
+                    break;
                 case "v":
                     switch (n1)
                     {
@@ -415,14 +420,54 @@ namespace Case
                 default: Console.WriteLine("Kate!"); break;
             }
             Console.WriteLine(c);
-            }
-        static void case12()
+        }
+        static void case15()
         {
+            Console.Write("Масть карты 1-пики, 2-треф, 3-бубны,4-червы: ");
+            int m = Convert.ToInt32(Console.ReadLine());
+            Console.Write("6 < N < 14 номер карты: ");
+            int n = Convert.ToInt32(Console.ReadLine());
+            switch (n)
+            {
+                case 6: Console.Write("шестерка "); break;
+                case 7: Console.Write("семерка "); break;
+                case 8: Console.Write("восьмерка "); break;
+                case 9: Console.Write("девятка "); break;
+                case 10: Console.Write("десятка "); break;
+                case 11: Console.Write("валет "); break;
+                case 12: Console.Write("дама "); break;
+                case 13: Console.Write("король\t"); break;
+                case 14: Console.Write("туз "); break;
+            }
+            switch (m)
+            {
+                case 1: Console.WriteLine("пик "); break;
+                case 2: Console.WriteLine("треф "); break;
+                case 3: Console.WriteLine("бубен"); break;
+                case 4: Console.WriteLine("червей"); break;
+            }
+
+        }
+        static void case16()
+        {
+            int g;
+
+            do
+            {
+                Console.Write("в диапазоне 20–69, определяющее возраст (в годах): ");
+                g = Convert.ToInt32(Console.ReadLine());
+                if (g <= 19 && g <= 70) Console.WriteLine("error");
+            }
+            while (g <= 19 && g <= 70);
+            int des, edn;
+            des = g / 10;
+            edn = g % 10;
+            Console.WriteLine(des);
 
         }
         static void Main(string[] args)
-        { 
-           case12();
+        {
+            case16();
             Console.ReadKey();
 
         }
