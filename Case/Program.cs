@@ -458,7 +458,7 @@ namespace Case
                 case 4:
                     Console.WriteLine("ploshad= " + b); s = b; a = Math.Sqrt(s*2); c = a * Math.Sqrt(2); h = c / 2;
 
-                    Console.WriteLine($"katet= {a} gipotenuza= {c} vysota= {h} ploshad= {s}"); break;
+                    Console.WriteLine($"katet= {a} gipotenuza= {c} vysota= {h} ploshad= {s}"); 
 
             }
 
