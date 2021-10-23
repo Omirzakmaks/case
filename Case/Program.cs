@@ -615,6 +615,10 @@ namespace Case
             }
             
         }
+        static void case18()
+        {
+
+        }
         static void Main(string[] args)
         {
             case17();
