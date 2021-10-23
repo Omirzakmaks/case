@@ -14,27 +14,13 @@ namespace Case
             int x = Convert.ToInt32(Console.ReadLine());
             switch (x)
             {
-                case 1:
-                    Console.WriteLine("1- kun Dusenbi");
-                    break;
-                case 2:
-                    Console.WriteLine("2- kun Seisenbi");
-                    break;
-                case 3:
-                    Console.WriteLine("3- kun Sarsenbi");
-                    break;
-                case 4:
-                    Console.WriteLine("4- kun Beisenbi");
-                    break;
-                case 5:
-                    Console.WriteLine("5- kun Zhuma");
-                    break;
-                case 6:
-                    Console.WriteLine("6- kun Senbi");
-                    break;
-                case 7:
-                    Console.WriteLine("7- kun Zheksenbi");
-                    break;
+                case 1:Console.WriteLine("1- kun Dusenbi");break;
+                case 2:Console.WriteLine("2- kun Seisenbi");break;
+                case 3:Console.WriteLine("3- kun Sarsenbi");break;
+                case 4:Console.WriteLine("4- kun Beisenbi");break;
+                case 5:Console.WriteLine("5- kun Zhuma");break;
+                case 6:Console.WriteLine("6- kun Senbi");break;
+                case 7:Console.WriteLine("7- kun Zheksenbi");break;
                 default:
                     Console.WriteLine("Aptada ondai kun jok");
                     break;
@@ -47,21 +33,11 @@ namespace Case
             int x = Convert.ToInt32(Console.ReadLine());
             switch (x)
             {
-                case 1:
-                    Console.WriteLine("zhaman");
-                    break;
-                case 2:
-                    Console.WriteLine("kanagattanarlyksyz");
-                    break;
-                case 3:
-                    Console.WriteLine("kanagattanarlyk");
-                    break;
-                case 4:
-                    Console.WriteLine("zhaksy");
-                    break;
-                case 5:
-                    Console.WriteLine("ote zhaksy");
-                    break;
+                case 1:Console.WriteLine("zhaman");break;
+                case 2:Console.WriteLine("kanagattanarlyksyz");break;
+                case 3:Console.WriteLine("kanagattanarlyk");break;
+                case 4:Console.WriteLine("zhaksy");break;
+                case 5:Console.WriteLine("ote zhaksy");break;
                 default:
                     Console.WriteLine("kate!!!");
                     break;
@@ -83,10 +59,10 @@ namespace Case
                 case 7: Console.WriteLine("7-Shilde ai"); break;
                 case 8: Console.WriteLine("8-Tamyz ai"); break;
                 case 9: Console.WriteLine("9-Kyrkuiek"); break;
-                case 10: Console.WriteLine("10-Kazan ai"); break;
-                case 11: Console.WriteLine("11-Karasha ai"); break;
-                case 12: Console.WriteLine("12-Zheltoksan ai"); break;
-                default: Console.WriteLine("Kate!"); break;
+                case 10:Console.WriteLine("10-Kazan ai"); break;
+                case 11:Console.WriteLine("11-Karasha ai"); break;
+                case 12:Console.WriteLine("12-Zheltoksan ai"); break;
+                default:Console.WriteLine("Kate!"); break;
             }
 
         }
@@ -102,13 +78,13 @@ namespace Case
                 case 7:
                 case 8:
                 case 10:
-                case 12: Console.WriteLine("31 kun"); break;
+                case 12:Console.WriteLine("31 kun"); break;
                 case 4:
                 case 6:
                 case 9:
-                case 11: Console.WriteLine("30 kun"); break;
-                case 2: Console.WriteLine("28-29 kun"); break;
-                default: Console.WriteLine("Kate!"); break;
+                case 11:Console.WriteLine("30 kun"); break;
+                case 2:Console.WriteLine("28-29 kun"); break;
+                default:Console.WriteLine("Kate!"); break;
             }
 
         }
@@ -143,7 +119,7 @@ namespace Case
                 case 4: Console.WriteLine($"{metr}metr={metr * 1000 }millimetr"); break;
                 case 2: Console.WriteLine($"{metr}metr={metr / 1000} kilometr"); break;
                 case 5: Console.WriteLine($"{metr}metr={metr * 100} santimetr"); break;
-                default: Console.WriteLine("Kate!"); break;
+                default:Console.WriteLine("Kate!"); break;
             }
 
         }
@@ -508,11 +484,11 @@ namespace Case
                 case 7: Console.Write("семерка "); break;
                 case 8: Console.Write("восьмерка "); break;
                 case 9: Console.Write("девятка "); break;
-                case 10: Console.Write("десятка "); break;
-                case 11: Console.Write("валет "); break;
-                case 12: Console.Write("дама "); break;
-                case 13: Console.Write("король\t"); break;
-                case 14: Console.Write("туз "); break;
+                case 10:Console.Write("десятка "); break;
+                case 11:Console.Write("валет "); break;
+                case 12:Console.Write("дама "); break;
+                case 13:Console.Write("король\t"); break;
+                case 14:Console.Write("туз "); break;
             }
             switch (m)
             {
