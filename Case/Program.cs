@@ -421,6 +421,81 @@ namespace Case
             }
             Console.WriteLine(c);
         }
+        static void case12()
+        {
+            Console.Write("1-r, 2-d,3-l,4-s: ");
+            int a = Convert.ToInt32(Console.ReadLine());
+            Console.Write("b: ");
+            int b = Convert.ToInt32(Console.ReadLine());
+            double r, d, l, s;
+            switch (a)
+            {
+                case 1:
+                    Console.WriteLine("r= " + b); r = b; d = r * 2; l = Math.PI * 2 * r; s = Math.PI * r * r;
+                    Console.WriteLine($"radius-{r} diametr-{d} dlina-{l} ploshad-{s}"); break;
+                case 2:
+                    Console.WriteLine("d= " + b); r = b / 2; d = b; l = Math.PI * 2 * r; s = Math.PI * r * r;
+                    Console.WriteLine($"radius-{r} diametr-{d} dlina-{l} ploshad-{s}"); break;
+                case 3:
+                    Console.WriteLine("l= " + b); l = b; r = l / 2 * Math.PI; d = r * 2; s = Math.PI * r * r;
+                    Console.WriteLine($"radius-{r} diametr-{d} dlina-{l} ploshad-{s}"); break;
+                case 4:
+                    Console.WriteLine("s= " + b); s = b; r = Math.Sqrt(s / Math.PI); d = r * 2; l = Math.PI * 2 * r;
+                    Console.WriteLine($"radius-{r} diametr-{d} dlina-{l} ploshad-{s}"); break;
+
+            }
+
+        }
+        static void case13()
+        {
+            Console.Write("1-a, 2-c,3-h,4-s: ");
+            int x = Convert.ToInt32(Console.ReadLine());
+            Console.Write("b: ");
+            int b = Convert.ToInt32(Console.ReadLine());
+            double a, c, h, s;
+            switch (x)
+            {
+                case 1:
+                    Console.WriteLine("1-katet= " + b); a = b; c = a * Math.Sqrt(2); h = c / 2; s = c * h / 2;
+                    Console.WriteLine($"katet= {a} gipotenuza= {c} vysota= {h} ploshad= {s}"); break;
+                case 2:
+                    Console.WriteLine("2-gipotenuza= " + b); c = b; a = c / Math.Sqrt(2); h = c / 2; s = c * h / 2;
+                    Console.WriteLine($"katet= {a} gipotenuza= {c} vysota= {h} ploshad= {s}"); break;
+                case 3:
+                    Console.WriteLine("3-vysota= " + b); h = b; c = h * 2; a = c / Math.Sqrt(2); s = c * h / 2;
+                    Console.WriteLine($"katet= {a} gipotenuza= {c} vysota= {h} ploshad= {s}"); break;
+                case 4:
+                    Console.WriteLine("ploshad= " + b); s = b; a = Math.Sqrt(s * 2); c = a * Math.Sqrt(2); h = c / 2;
+
+                    Console.WriteLine($"katet= {a} gipotenuza= {c} vysota= {h} ploshad= {s}");break;
+
+            }
+
+        }
+        static void case14()
+        {
+            Console.Write("1-a, 2-c,3-h,4-s: ");
+            int x = Convert.ToInt32(Console.ReadLine());
+            Console.Write("b: ");
+            int b = Convert.ToInt32(Console.ReadLine());
+            double a, r1, r2, s;
+            switch (x)
+            {
+                case 1:
+                    Console.WriteLine("1-kabyrga= " + b); a = b; r1 = a * Math.Sqrt(3)/6; r2 = 2*r1; s = a*a * Math.Sqrt(3)/ 4;
+                    Console.WriteLine($"kabyrga= {a} R1= {r1} R2= {r2} audany= {s}"); break;
+                case 2:
+                    Console.WriteLine("2-R1= " + b); r1 = b; a = r1*6 / Math.Sqrt(3); r2 = 2 * r1; s = a * a * Math.Sqrt(3) / 4;
+                    Console.WriteLine($"kabyrga= {a} R1= {r1} R2= {r2} audany= {s}"); break;
+               case 3:
+                    Console.WriteLine("3-R2= " + b); r2 = b; r1 = r2/2; a = r1 * 6 / Math.Sqrt(3); s = a * a * Math.Sqrt(3) / 4;
+                    Console.WriteLine($"kabyrga= {a} R1= {r1} R2= {r2} audany= {s}"); break;
+                case 4:
+                    Console.WriteLine("audany= " + b); s = b; a = Math.Sqrt(s *4/Math.Sqrt(3)); r1 = a * Math.Sqrt(3) / 6; r2 = 2 * r1;
+                    Console.WriteLine($"kabyrga= {a} R1= {r1} R2= {r2} audany= {s}"); break;
+
+            }
+        }
         static void case15()
         {
             Console.Write("Масть карты 1-пики, 2-треф, 3-бубны,4-червы: ");
@@ -462,12 +537,87 @@ namespace Case
             int des, edn;
             des = g / 10;
             edn = g % 10;
-            Console.WriteLine(des);
+            
+            switch (des)
+            {
+                case 2: Console.Write("Двадцать "); break;
+                case 3: Console.Write("Тридцать "); break;
+                case 4: Console.Write("Сорок "); break;
+                case 5: Console.Write("Пятьдесят "); break;
+                case 6: Console.Write("Шестдесят "); break;
 
+            }
+            switch (edn)
+            {
+                case 0: Console.Write("лет"); break;
+                case 1: Console.Write("один год"); break;
+                case 2: Console.Write("Два года"); break;
+                case 3: Console.Write("Три года"); break;
+                case 4: Console.Write("Четыре года"); break;
+                case 5: Console.Write("Пять лет"); break;
+                case 6: Console.Write("Шесть лет"); break;
+                case 7: Console.Write("Семь лет"); break;
+                case 8: Console.Write("Восемь лет"); break;
+                case 9: Console.Write("Девять лет"); break;
+                
+
+            }
+
+        }
+        static void case17()
+        {
+            int g;
+
+            do
+            {
+                Console.Write(" чиcло в диапазоне 10-40, : ");
+                g = Convert.ToInt32(Console.ReadLine());
+                if (g <= 9 && g <= 40) Console.WriteLine("error");
+            }
+            while (g <= 9 && g <= 40);
+            int des, edn;
+            des = g / 10;
+            edn = g % 10;
+            
+            switch (g)
+            {
+                
+                case 11: Console.WriteLine("одиннадцать учебных заданий");break;
+                case 12: Console.WriteLine("двенадцать учебных заданий"); break;
+                case 13: Console.WriteLine("тринадцать учебных заданий"); break;
+                case 14: Console.WriteLine("четырнадцать учебных заданий"); break;
+                case 15: Console.WriteLine("пятнадцать учебных заданий"); break;
+                case 16: Console.WriteLine("шестнадцать учебных заданий"); break;
+                case 17: Console.WriteLine("семнадцать учебных заданий"); break;
+                case 18: Console.WriteLine("восемнадцать учебных заданий"); break;
+                case 19: Console.WriteLine("девятнадцать учебных заданий");break;
+            }
+            switch (des)
+            {
+                case 1: Console.Write("Десять "); break;
+                case 2: Console.Write("Двадцать "); break;
+                case 3: Console.Write("Тридцать "); break;
+                case 4: Console.Write("Сорок "); break;
+              
+            }
+            switch (edn)
+            {
+                case 0: Console.WriteLine(" учебных заданий");break;
+                case 1: Console.WriteLine(" одно учебное задание"); break;
+                case 2: Console.WriteLine(" два учебных задания"); break;
+                case 3: Console.WriteLine("три учебных задания"); break;
+                case 4: Console.WriteLine("четыре учебных задания "); break;
+                case 5: Console.WriteLine("пять учебных заданий"); break;
+                case 6: Console.WriteLine("шесть учебных заданий"); break;
+                case 7: Console.WriteLine("семь учебных заданий"); break;
+                case 8: Console.WriteLine("восемь учебных заданий"); break;
+                case 9: Console.WriteLine("девять учебных заданий"); break;
+            }
+            
         }
         static void Main(string[] args)
         {
-            case16();
+            case17();
             Console.ReadKey();
 
         }
