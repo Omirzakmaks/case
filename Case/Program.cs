@@ -685,10 +685,60 @@ namespace Case
                
             }
         }
+        static void case20()
+        {
+            Console.Write("kun: ");
+            int d = int.Parse(Console.ReadLine());
+            Console.Write("ai: ");
+            int m = int.Parse(Console.ReadLine());
+            switch (m)
+            {
+                case 1:
+                    if (d >= 20) Console.WriteLine("sukyigyw");
+                    else Console.WriteLine("tauewki"); break;
+                case 2:
+                    if (d <= 19) Console.WriteLine("balyktar");
+                    else Console.WriteLine("sukyigyw");
+                    break;
+                case 3:
+                    if (d >= 21) Console.WriteLine("tokty");
+                    else Console.WriteLine("balyktar");
+                    break;
+                case 4:
+                    if (d >= 20) Console.WriteLine("torpak");
+                    else Console.WriteLine("tokty"); break;
+                case 5:
+                    if (d >= 21) Console.WriteLine("egizder");
+                    else Console.WriteLine("torpak"); break;
+                case 6:
+                    if (d >= 22) Console.WriteLine("rak");
+                    else Console.WriteLine("egizder"); break;
+                case 7:
+                    if (d >= 23) Console.WriteLine("arystan");
+                    else Console.WriteLine("rak"); break;
+                case 8:
+                    if (d >= 23) Console.WriteLine("bikew");
+                    else Console.WriteLine("arystan"); break;
+                case 9:
+                    if (d >= 23) Console.WriteLine("tarazy");
+                    else Console.WriteLine("bikew"); break;
+                case 10:
+                    if (d >= 23) Console.WriteLine("saryshaian");
+                    else Console.WriteLine("tarazy"); break;
+                case 11:
+                    if (d >= 23) Console.WriteLine("mergen");
+                    else Console.WriteLine("saryshaian"); break;
+                case 12:
+                    if (d >= 22) Console.WriteLine("tauewki");
+                    else Console.WriteLine("sukyigyw"); break;
+
+            }
+
+        }
         static void Main(string[] args)
         {
             //Console.WriteLine(1994% 1984%60%12);
-            case19();
+            case20();
             Console.ReadKey();
 
         }
